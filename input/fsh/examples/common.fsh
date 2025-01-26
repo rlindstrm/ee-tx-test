@@ -1,35 +1,22 @@
-Instance: AuthorOrganization
-InstanceOf: Organization
-Usage: #example
-Title: "Asutuse näidis"
-* id = "org1"
-* name = "Karulaugu Perearstikeskus"
+Instance: tx-eu-medication
+InstanceOf: TxeuMedication
+Description: "Behaviour of different terminology servers. This one uses concepts from tx-eu"
 
-Instance: AuthorPractitioner
-InstanceOf: Practitioner
-Usage: #example
-Title: "Arsti näidis"
-* id = "pract1"
-* identifier[0].system = "https://fhir.ee/sid/pro/est/pho"
-* identifier[=].value = "D12345"
-* active = true
-* name.family = "Arst"
-* name.given = "Paavo"
+* doseForm = $eHDSIDoseForm#50053000 "Powder for solution for injection or infusion"
+* ingredient[0].item.concept = $sms#100000092667 "Cefuroxime" //correct
+* ingredient[=].strengthQuantity = 1500 $ucum#mg "milligram"
+* ingredient[+].item.concept = $sms#100000091436 "cefuroxime sodium" // lowercase
 
-Instance: Patient
-InstanceOf: Patient
-Usage: #example
-Title: "Patsiendi näidis"
-* id = "pat1"
-* name
-  * given = "Taavi"
-  * family = "Kask"
 
-Instance: HealthDeclaration
-InstanceOf: QuestionnaireResponse
-Usage: #example
-Title: "Küsimustiku vastuse näidis"
-* id = "qre-200"
-* status = #completed
-* questionnaire = "urn:uuid:95eaedf7-8a24-478a-8300-39acc44c746b"
-* subject = Reference(Patient/pat1)
+Instance: onto-ee-medication
+InstanceOf: OntoeeMedication
+Description: "Behaviour of different terminology servers. This one uses concepts from TEHIK Ontoserver R5"
+
+* doseForm = $ravimvorm#1205 "süsteemulsioon" // correct
+* ingredient[0].item.concept = $ained#H2 "süstitav sõltuvusaine" // correct
+* ingredient[=].strengthQuantity = 1500 $yhik#MG "MG"
+* ingredient[+].item.concept = $ained#E "Ravim" //capital R
+* ingredient[+].item.concept = $ained#I3 "seen" // correct
+
+
+
