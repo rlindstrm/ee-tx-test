@@ -1,4 +1,4 @@
-Instance: tx-eu-medication
+/*Instance: tx-eu-medication
 InstanceOf: TxeuMedication
 Description: "Behaviour of different terminology servers. This one uses concepts from tx-eu"
 
@@ -6,7 +6,7 @@ Description: "Behaviour of different terminology servers. This one uses concepts
 * ingredient[0].item.concept = $sms#100000092667 "Cefuroxime" //correct
 * ingredient[=].strengthQuantity = 1500 $ucum#mg "milligram"
 * ingredient[+].item.concept = $sms#100000091436 "cefuroxime sodium" // lowercase
-
+*/
 
 Instance: onto-ee-medication
 InstanceOf: OntoeeMedication
@@ -17,6 +17,7 @@ Description: "Behaviour of different terminology servers. This one uses concepts
 * ingredient[=].strengthQuantity = 1500 $yhik#MG "MG"
 * ingredient[+].item.concept = $ained#E "Ravim" //capital R
 * ingredient[+].item.concept = $ained#I3 "seen" // correct
+* ingredient[=].strengthQuantity = 1500 $ucum#mg "milligram"
 
 
 
