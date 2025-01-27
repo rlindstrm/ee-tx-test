@@ -1,5 +1,3 @@
-# ig-ee-hcert
+Test
 
-Implementation Guide for Health certificate service (HCERT)
-
-https://github.tehik.ee/ig-ee-hcert/index.html
+https://rlindstrm.github.io/ee-tx-test
