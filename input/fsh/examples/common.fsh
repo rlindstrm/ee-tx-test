@@ -15,7 +15,7 @@ Description: "Behaviour of different terminology servers. This one uses concepts
 * doseForm = $ravimvorm#1205 "süsteemulsioon" // correct
 * ingredient[0].item.concept = $ained#H2 "süstitav sõltuvusaine" // correct
 * ingredient[=].strengthQuantity = 1500 $yhik#MG "MG"
-* ingredient[+].item.concept = $ained#E "Ravim" // case difference
+* ingredient[+].item.concept = $ained#E // no display
 * ingredient[+].item.concept = $ained#I3 "seen" // correct
 * ingredient[=].strengthQuantity = 1500 $ucum#mg "milligram" //UCUM not present in EE Ontoserver
 
