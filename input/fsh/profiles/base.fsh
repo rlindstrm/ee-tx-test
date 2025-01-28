@@ -14,3 +14,4 @@ Description: "Behaviour of different terminology servers. This one uses concepts
 
 * doseForm from $ravimvormVS (required)
 * ingredient.item from $ainedVS (required)
+* code = $ained#E "ravim"
