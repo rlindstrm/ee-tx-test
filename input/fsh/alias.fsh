@@ -9,3 +9,4 @@ Alias: $ainedVS = https://fhir.ee/ValueSet/mtk-myrgistust-pohjustav-aine
 Alias: $ravimvorm = https://fhir.ee/CodeSystem/ravimvormid
 Alias: $ained = https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine
 Alias: $yhik = https://fhir.ee/CodeSystem/retsept-mahu-ja-massiyhik
+Alias: $keel = urn:ietf:bcp:47

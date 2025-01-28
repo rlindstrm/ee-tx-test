@@ -12,7 +12,7 @@ Parent: Medication
 Title: "Test Medication"
 Description: "Profile using concepts from TEHIK Ontoserver R5"
 
-* language = #et
+* ^language = #et
 * doseForm from $ravimvormVS (required)
 * ingredient.item from $ainedVS (required)
 * code = $ained#E "ravim"
