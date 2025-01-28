@@ -12,6 +12,7 @@ Instance: onto-ee-medication
 InstanceOf: OntoeeMedication
 Description: "Behaviour of different terminology servers. This one uses concepts from TEHIK Ontoserver R5"
 
+* language = #et
 * doseForm = $ravimvorm#1205 "süsteemulsioon" // correct
 * ingredient[0].item.concept = $ained#H2 "süstitav sõltuvusaine" // correct
 * ingredient[=].strengthQuantity = 1500 $yhik#MG "MG"
