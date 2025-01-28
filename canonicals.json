@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "ee.fhir.hcert",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.ee/hcert/ImplementationGuide/ee.fhir.hcert",
+    "version" : "1.0.0",
+    "name" : "HCERT"
+  },
+  {
+    "id" : "OntoeeMedication",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/hcert/StructureDefinition/OntoeeMedication",
+    "version" : "1.0.0",
+    "name" : "OntoeeMedication"
+  }
+]

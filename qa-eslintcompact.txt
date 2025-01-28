@@ -1,0 +1,19 @@
+HCERT
+=========================================
+
+/github/workspace/fsh-generated/resources/ImplementationGuide-ee.fhir.hcert.json: line 1, col 902, Error - Error from https://term.tehik.ee/fhir: Error: [4406163a-2f42-46fd-b7a8-9b8f5bdfa1e6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/Medication-onto-ee-medication.json: line 61, col 19, Error - The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [e00b3204-a8e7-4cca-9f54-8fa881ef79a2]: Coding without system value.
+Information: (no details supplied)
+) (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-OntoeeMedication.json: line 1, col 78, Error - The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [e00b3204-a8e7-4cca-9f54-8fa881ef79a2]: Coding without system value.
+Information: (no details supplied)
+) (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-OntoeeMedication.json: line 1, col 21698, Error - Error from https://term.tehik.ee/fhir: Error: [4406163a-2f42-46fd-b7a8-9b8f5bdfa1e6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+ (EXCEPTION)
+/github/workspace/fsh-generated/resources/StructureDefinition-OntoeeMedication.json: line 0, col 0, Warning - The definition for the element 'Medication.ingredient.strength[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-ingredientstrength' which is experimental, but this structure is not labeled as experimental (BUSINESSRULE)
+
+err = 4, warn = 1, info = 0
+IG Publisher Version: 1.8.9

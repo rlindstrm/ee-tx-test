@@ -1,0 +1,28 @@
+HCERT : Validation Results
+=========================================
+
+err = 4, warn = 1, info = 0
+$--
+Generated $--. FHIR version $-- for ee.fhir.hcert#$-- (canonical = https://fhir.ee/hcert)
+ Build Errors : 0 / 0 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ee.fhir.hcert : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Medication-onto-ee-medication : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OntoeeMedication : 2 / 1 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/ImplementationGuide-ee.fhir.hcert.json ==
+ERROR: ImplementationGuide/ee.fhir.hcert: ImplementationGuide.jurisdiction[0]: Error from https://term.tehik.ee/fhir: Error: [4406163a-2f42-46fd-b7a8-9b8f5bdfa1e6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+
+== fsh-generated/resources/Medication-onto-ee-medication.json ==
+ERROR: Medication/onto-ee-medication: Medication.language: The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [e00b3204-a8e7-4cca-9f54-8fa881ef79a2]: Coding without system value.
+Information: (no details supplied)
+)
+== fsh-generated/resources/StructureDefinition-OntoeeMedication.json ==
+ERROR: StructureDefinition/OntoeeMedication: StructureDefinition.language: The value provided ('et') was not found in the value set 'All Languages' (http://hl7.org/fhir/ValueSet/all-languages|5.0.0), and a code is required from this value set  (error message = Error from https://term.tehik.ee/fhir: Error: [e00b3204-a8e7-4cca-9f54-8fa881ef79a2]: Coding without system value.
+Information: (no details supplied)
+)
+ERROR: StructureDefinition/OntoeeMedication: StructureDefinition.jurisdiction[0]: Error from https://term.tehik.ee/fhir: Error: [4406163a-2f42-46fd-b7a8-9b8f5bdfa1e6]: A usable code system with URL urn:iso:std:iso:3166 could not be resolved.
+Information: (no details supplied)
+
+WARNING: StructureDefinition/OntoeeMedication: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Medication.ingredient.strength[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-ingredientstrength' which is experimental, but this structure is not labeled as experimental

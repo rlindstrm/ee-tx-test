@@ -1,0 +1,35 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.ee/ValueSet/mtk-myrgistust-pohjustav-aine",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "MTKMyrgistustPohjustavAine",
+      "title" : "Mürgistust põhjustav aine",
+      "description" : "Loetelu võimalikest patsiendi mürgistuse põhjuseks olevatest ainetest.",
+      "systems" : ["https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine"],
+      "oids" : ["1.3.6.1.4.1.28284.6.2.1.235.2", "1.3.6.1.4.1.28284.6.2.1.235"],
+      "sources" : ["1.3.6.1.4.1.28284.6.2.1.235.2", "1.3.6.1.4.1.28284.6.2.1.235"],
+      "uses" : {
+      },
+      "StructureDefinition-OntoeeMedication.html" : "Test Medication"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/ravimvormid",
+      "version" : "22.0.0",
+      "status" : "active",
+      "name" : "Ravimvormid",
+      "title" : "Ravimvormid",
+      "description" : "Tervise infosüsteemi dokumentide ja digitaalse retsepti koostamisel sisestatavad ravimvormid.",
+      "systems" : [
+        "https://fhir.ee/CodeSystem/ravimvormid",
+        "https://fhir.ee/CodeSystem/uldised-ravimvormid"
+      ],
+      "oids" : ["1.3.6.1.4.1.28284.6.2.1.12.22", "1.3.6.1.4.1.28284.6.2.1.12"],
+      "sources" : ["1.3.6.1.4.1.28284.6.2.1.12.22", "1.3.6.1.4.1.28284.6.2.1.12"],
+      "uses" : {
+      },
+      "StructureDefinition-OntoeeMedication.html" : "Test Medication"
+    }
+  ]
+}

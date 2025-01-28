@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.org/fhir/CodeSystem/medication-ingredientstrength,5.0.0,active,"2.16.840.1.113883.4.642.4.2062",MedicationIngredientStrengthCodes,Medication Ingredient Strength Codes,"Medication Ingredient Strength Codes","ValueSet/medication-ingredientstrength"
+http://hl7.org/fhir/CodeSystem/medication-status,5.0.0,active,"2.16.840.1.113883.4.642.4.1380",MedicationStatusCodes,Medication Status Codes,"Medication Status Codes","ValueSet/medication-status"
+urn:ietf:bcp:47,2.0.1,active,"2.16.840.1.113883.6.121",Ietf3066,Tags for the Identification of Languages,"Older value from OID registry.  Superceded; see recommendations in BCP-47.","ValueSet/languages,ValueSet/all-languages"

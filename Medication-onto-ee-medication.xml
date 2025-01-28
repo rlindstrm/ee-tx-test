@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="onto-ee-medication"/>
+  <meta>
+    <profile value="https://fhir.ee/hcert/StructureDefinition/OntoeeMedication"/>
+  </meta>
+  <language value="et"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="et" lang="et"><p class="res-header-id"><b>Generated Narrative: Medication onto-ee-medication</b></p><a name="onto-ee-medication"> </a><a name="hconto-ee-medication"> </a><a name="onto-ee-medication-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: et</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OntoeeMedication.html">Test Medication</a></p></div><p><b>status</b>: Active</p><p><b>doseForm</b>: <span title="Codes:{https://fhir.ee/CodeSystem/ravimvormid 1205}">süsteemulsioon</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine H2}">süstitav sõltuvusaine</span></td></tr></table><p><b>strength</b>: 1500 MG<span style="background: LightGoldenRodYellow"> (Details: retsept-mahu-ja-massiyhik  codeMG = 'MG')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine E}">ravim</span></td></tr></table></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine I3}">seen</span></td></tr></table><p><b>strength</b>: 1500 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></p></blockquote></div>
+  </text>
+  <status value="active"/>
+  <doseForm>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/ravimvormid"/>
+      <code value="1205"/>
+      <display value="süsteemulsioon"/>
+    </coding>
+  </doseForm>
+  <ingredient>
+    <item>
+      <concept>
+        <coding>
+          <system value="https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine"/>
+          <code value="H2"/>
+          <display value="süstitav sõltuvusaine"/>
+        </coding>
+      </concept>
+    </item>
+    <strengthQuantity>
+      <value value="1500"/>
+      <unit value="MG"/>
+      <system value="https://fhir.ee/CodeSystem/retsept-mahu-ja-massiyhik"/>
+      <code value="MG"/>
+    </strengthQuantity>
+  </ingredient>
+  <ingredient>
+    <item>
+      <concept>
+        <coding>
+          <system value="https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine"/>
+          <code value="E"/>
+        </coding>
+      </concept>
+    </item>
+  </ingredient>
+  <ingredient>
+    <item>
+      <concept>
+        <coding>
+          <system value="https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine"/>
+          <code value="I3"/>
+          <display value="seen"/>
+        </coding>
+      </concept>
+    </item>
+    <strengthQuantity>
+      <value value="1500"/>
+      <unit value="milligram"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg"/>
+    </strengthQuantity>
+  </ingredient>
+</Medication>

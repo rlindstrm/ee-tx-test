@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/hcert/Medication/onto-ee-medication> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "onto-ee-medication"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/hcert/StructureDefinition/OntoeeMedication"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/hcert/StructureDefinition/OntoeeMedication>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "et"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"et\" lang=\"et\"><p class=\"res-header-id\"><b>Generated Narrative: Medication onto-ee-medication</b></p><a name=\"onto-ee-medication\"> </a><a name=\"hconto-ee-medication\"> </a><a name=\"onto-ee-medication-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: et</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OntoeeMedication.html\">Test Medication</a></p></div><p><b>status</b>: Active</p><p><b>doseForm</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/ravimvormid 1205}\">süsteemulsioon</span></p><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine H2}\">süstitav sõltuvusaine</span></td></tr></table><p><b>strength</b>: 1500 MG<span style=\"background: LightGoldenRodYellow\"> (Details: retsept-mahu-ja-massiyhik  codeMG = 'MG')</span></p></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine E}\">ravim</span></td></tr></table></blockquote><blockquote><p><b>ingredient</b></p><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine I3}\">seen</span></td></tr></table><p><b>strength</b>: 1500 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:doseForm [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/ravimvormid"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1205" ] ;
+       fhir:display [ fhir:v "süsteemulsioon" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "H2" ] ;
+           fhir:display [ fhir:v "süstitav sõltuvusaine" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "1500"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "MG" ] ;
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/retsept-mahu-ja-massiyhik"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "MG" ]
+     ]
+  ] [
+     fhir:item [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "E" ]
+         ] )
+       ]
+     ]
+  ] [
+     fhir:item [
+       fhir:concept [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.ee/CodeSystem/mtk-myrgistust-pohjustav-aine"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "I3" ] ;
+           fhir:display [ fhir:v "seen" ]
+         ] )
+       ]
+     ] ;
+     fhir:strength [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "1500"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "milligram" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mg" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
