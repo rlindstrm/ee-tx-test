@@ -12,6 +12,7 @@ Parent: Medication
 Title: "Test Medication"
 Description: "Behaviour of different terminology servers. This one uses concepts from TEHIK Ontoserver R5"
 
+* language = #et
 * doseForm from $ravimvormVS (required)
 * ingredient.item from $ainedVS (required)
 * code = $ained#E "ravim"
