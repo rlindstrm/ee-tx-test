@@ -19,6 +19,7 @@ Description: "Behaviour of different terminology servers. This one uses concepts
 * ingredient[+].item.concept = $ained#E // no display
 * ingredient[+].item.concept = $ained#I3 "seen" // correct
 * ingredient[=].strengthQuantity = 1500 $ucum#mg "milligram" //UCUM not present in EE Ontoserver
+* status = #active
 
 
 
