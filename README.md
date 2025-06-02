@@ -1,4 +1,3 @@
 Test
 
-
-https://rlindstrm.github.io/ee-tx-test
+https://build.fhir.org/ig/rlindstrm/ee-tx-test/
