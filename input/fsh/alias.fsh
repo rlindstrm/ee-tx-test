@@ -1,7 +1,7 @@
-Alias: $eHDSISubstance = http://terminology.ehdsi.eu/ValueSet/eHDSISubstance
-Alias: $eHDSIDoseForm = http://terminology.ehdsi.eu/ValueSet/eHDSIdoseForm
-Alias: $edqm = http://unitsofmeasure.org
-Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition
+// Alias: $eHDSISubstance = http://terminology.ehdsi.eu/ValueSet/eHDSISubstance
+// Alias: $eHDSIDoseForm = http://terminology.ehdsi.eu/ValueSet/eHDSIdoseForm
+// Alias: $sms = https://spor.ema.europa.eu/v2/SubstanceDefinition
+
 Alias: $ucum = http://unitsofmeasure.org
 
 Alias: $ravimvormVS = https://fhir.ee/ValueSet/ravimvormid
