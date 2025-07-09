@@ -12,8 +12,8 @@ Title: "Laboratory observation model"
 Description: """Observation model, taking metadata from the DataSet model. Allows animal patients in addition to human"""
 Characteristics: #can-be-target
 
-* subject ^type.target[+] = Canonical(HumanPatient)
-* subject ^type.target[+] = Canonical(AnimalPatient)
+* subject ^type.profile[+] = Canonical(HumanPatient)
+* subject ^type.profile[+] = Canonical(AnimalPatient)
 
 
 Logical: HumanPatient
