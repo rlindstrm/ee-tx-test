@@ -5,7 +5,7 @@ Characteristics: #can-be-target
 
 * subject 1..1 HumanPatient "My human patient model"
 
-/*
+
 Logical: LabObservation
 Parent: EHDSDataSet
 Title: "Laboratory observation model"
@@ -14,7 +14,7 @@ Characteristics: #can-be-target
 
 * subject ^type.target[+] = Canonical(HumanPatient)
 * subject ^type.target[+] = Canonical(AnimalPatient)
-*/
+
 
 Logical: HumanPatient
 Title: "Human patient"
