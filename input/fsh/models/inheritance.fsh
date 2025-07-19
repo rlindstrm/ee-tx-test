@@ -3,7 +3,7 @@ Title: "Metadata"
 Description: """Metadata for data set"""
 Characteristics: #can-be-target
 
-* subject 1..1 HumanPatient "My human patient model"
+* subject[x] 1..1 HumanPatient "My human patient model"
 
 
 Logical: LabObservation
@@ -12,8 +12,8 @@ Title: "Laboratory observation model"
 Description: """Observation model, taking metadata from the DataSet model. Allows animal patients in addition to human"""
 Characteristics: #can-be-target
 
-* subject ^type.profile[+] = Canonical(HumanPatient)
-* subject ^type.profile[+] = Canonical(AnimalPatient)
+* subject[x] ^type.profile[+] = Canonical(HumanPatient)
+* subject[x] ^type.profile[+] = Canonical(AnimalPatient)
 
 
 Logical: HumanPatient
