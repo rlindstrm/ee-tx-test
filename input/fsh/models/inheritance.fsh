@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 
 
 Logical: LabObservation
-Parent: EHDSDataSet
+Parent: DataSet
 Title: "Laboratory observation model"
 Description: """Observation model, taking metadata from the DataSet model. Allows animal patients in addition to human"""
 Characteristics: #can-be-target
